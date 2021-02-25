@@ -27,11 +27,16 @@ li{
 width: 700px;
 }
 
-#return{
+#return, #plus{
     color: blue;
 } 
 
 #headers{
     display: flex;
     justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+
 }
