@@ -1,1 +1,8 @@
-<h1>Welcome to the jungle</h1>
+<ul>
+  <% @tasks.each do |task| %>
+    <li><%= link_to task.title, task_path(task) %>
+       | <%= link_to "X", task_path(task), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger" %>
+       | <%= link_to "Edit", edit_task_path(task), class: "btn btn-primary" %>
+    </li>
+  <% end %>
+</ul>
