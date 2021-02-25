@@ -1,3 +1,4 @@
+<h1>Edit Task</h1>
 <%= form_for(@task) do |f| %>
   <%= f.label :title %>
   <%= f.text_field :title %>
@@ -7,4 +8,4 @@
   <%= f.text_field :completed %>
   <%= f.submit %>
 <% end %>
-<li><%= link_to "Return to home page", tasks_path %></li>
+<li class="fas fa-undo", id="return" ><%= link_to "Return to home page", tasks_path %></li>
